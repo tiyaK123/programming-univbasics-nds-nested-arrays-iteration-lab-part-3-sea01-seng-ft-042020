@@ -3,14 +3,12 @@ def join_nested_strings(src)
   # Combine all Strings present in the AoA into a single value and return it
   str = ""
   count = 0 
-  while str.length > count do
+  while src.length > count do
     num = 0 
-    while str[count].length > num do 
+    while src[count].length > num do 
       
-      if (str[count][num] % 2)
-        
-      else
-        str += " " + str[count][num]
+      if !(src[count][num] % 2)
+        str += " " + src[count][num]
       end
       num += 1 
     end
