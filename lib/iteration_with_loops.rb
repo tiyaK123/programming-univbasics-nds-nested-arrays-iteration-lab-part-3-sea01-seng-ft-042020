@@ -7,7 +7,7 @@ def join_nested_strings(src)
     num = 0 
     while src[count].length > num do 
       s = src[count][num]
-      if !(src[count][num] % 2)
+      if s.split
         str += " " + src[count][num]
       end
       num += 1 
